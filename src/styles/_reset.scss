@@ -1,0 +1,15 @@
+@use './functions' as *;
+@use './typography' as *;
+@use './variables' as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+}
