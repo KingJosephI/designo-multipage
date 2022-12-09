@@ -13,6 +13,8 @@
 body {
   font-family: 'Jost', sans-serif;
   color: $black;
+  max-width: rem(1440);
+  margin: 0 auto;
 }
 
 img {

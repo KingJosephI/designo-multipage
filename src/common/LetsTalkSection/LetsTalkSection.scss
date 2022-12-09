@@ -7,6 +7,9 @@
   background-color: $peach;
   color: $white;
   border-radius: rem(10);
+  @include backgroundImage(
+    '../../assets/shared/desktop/bg-pattern-call-to-action.svg'
+  );
 
   &__title {
     font-size: rem(32);
@@ -35,6 +38,36 @@
     &:hover {
       background-color: $peach-light;
       color: white;
+    }
+  }
+}
+
+@media (width>=rem(1024)) {
+  .lets-talk-section {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    padding-inline: rem(94);
+    margin-inline: rem(165);
+    align-items: center;
+
+    &__title {
+      width: 100%;
+      text-align: left;
+      font-size: rem(40);
+      line-height: rem(40);
+      padding-right: 60%;
+      padding-block-end: rem(20);
+    }
+
+    &__description {
+      font-size: rem(16);
+      line-height: rem(26);
+      padding-right: 45%;
+    }
+
+    &__get-in-touch-button {
+      align-self: center;
     }
   }
 }
