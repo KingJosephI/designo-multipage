@@ -1,5 +1,11 @@
+import { Layout } from '../../common';
+
 const OurCompany = () => {
-  return <div>OurCompany</div>;
+  return (
+    <Layout>
+      <h1>Our company</h1>
+    </Layout>
+  );
 };
 
 export default OurCompany;

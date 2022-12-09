@@ -1,5 +1,11 @@
+import { Layout } from '../../common';
+
 const Location = () => {
-  return <div>Location</div>;
+  return (
+    <Layout>
+      <h1>Location</h1>
+    </Layout>
+  );
 };
 
 export default Location;
