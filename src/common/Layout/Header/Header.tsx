@@ -5,12 +5,18 @@ import './Header.scss';
 const Header = () => {
   return (
     <header className="header">
-      <img className="header__logo" src={logo} alt="Designo website picture" />
+      <NavLink to="/">
+        <img
+          className="header__logo"
+          src={logo}
+          alt="Designo website picture"
+        />
+      </NavLink>
       <nav className="header__navigation">
-        <button></button>
+        <button className="header__hamburger"></button>
         <ul className="header__menu">
           <li>
-            <NavLink className="header__link" to="/company">
+            <NavLink className="header__link" to="/our-company">
               Our company
             </NavLink>
           </li>

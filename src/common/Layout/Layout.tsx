@@ -1,9 +1,8 @@
-import React from 'react';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
 
 interface ILayout {
-  children: JSX.Element;
+  children?: JSX.Element;
 }
 
 const Layout: React.FC<ILayout> = ({ children }: ILayout) => {

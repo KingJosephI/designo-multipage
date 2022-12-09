@@ -1,5 +1,7 @@
+import { Layout } from '../../common';
+
 const Homepage = () => {
-  return <div>Homepage</div>;
+  return <Layout></Layout>;
 };
 
 export default Homepage;
