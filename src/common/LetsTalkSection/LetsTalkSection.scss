@@ -1,0 +1,40 @@
+@use '../../styles/' as *;
+
+.lets-talk-section {
+  margin-inline: rem(28);
+  padding: rem(68) rem(25);
+  text-align: center;
+  background-color: $peach;
+  color: $white;
+  border-radius: rem(10);
+
+  &__title {
+    font-size: rem(32);
+    line-height: rem(36);
+    font-weight: 500;
+    padding-block-end: rem(6);
+    width: rem(300);
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__description {
+    font-size: rem(15);
+    line-height: rem(25);
+  }
+
+  &__get-in-touch-button {
+    display: inline-block;
+    background-color: $white;
+    text-transform: uppercase;
+    padding: rem(20);
+    border-radius: rem(8);
+    margin-block-start: rem(32);
+    transition: 0.2s;
+
+    &:hover {
+      background-color: $peach-light;
+      color: white;
+    }
+  }
+}
