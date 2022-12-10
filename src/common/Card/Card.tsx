@@ -1,21 +1,26 @@
 import React from 'react';
 import './Card.scss';
 
-interface ICard {
+interface ICard extends React.BaseHTMLAttributes<HTMLDivElement> {
   title?: string;
   description?: string;
   illustration?: string;
 }
 
-const Card: React.FC<ICard> = ({ title, description, illustration }: ICard) => {
+const Card = ({
+  title = '',
+  description = '',
+  illustration = '',
+  ...props
+}: ICard) => {
   return (
-    <article className="card">
+    <article className="card" {...props}>
       <img
         className="card__illustration"
         src={illustration}
         alt="Card illustration"
       />
-      <div>
+      <div className="card__content">
         <h2 className="card__title">{title}</h2>
         <p className="card__description">{description}</p>
       </div>

@@ -1,0 +1,6 @@
+@use '../../styles/' as *;
+
+.homepage {
+  display: grid;
+  gap: rem(120);
+}

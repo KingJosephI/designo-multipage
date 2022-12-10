@@ -1,11 +1,10 @@
-import React from 'react';
 import { Card } from '../../../../common';
 import friendlyIllustration from '../../../../assets/home/desktop/illustration-friendly.svg';
 import passionateIllustration from '../../../../assets/home/desktop/illustration-passionate.svg';
 import resourcefulIllustration from '../../../../assets/home/desktop/illustration-resourceful.svg';
 import './CardList.scss';
 
-const CardList: React.FC = () => {
+const CardList = () => {
   return (
     <section className="card-list">
       <Card
