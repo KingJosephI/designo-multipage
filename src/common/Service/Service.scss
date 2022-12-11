@@ -1,0 +1,54 @@
+@use '../../styles/' as *;
+
+.service {
+  border-radius: rem(15);
+  text-align: center;
+  min-height: rem(250);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__name {
+    text-transform: uppercase;
+    font-size: rem(28);
+    line-height: rem(39);
+    letter-spacing: rem(1.4);
+    font-weight: 500;
+    color: $white;
+  }
+  &__view-project-link {
+    color: $white;
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+    font-size: rem(15);
+    letter-spacing: rem(5);
+    text-transform: uppercase;
+  }
+  &__arrow {
+    display: block;
+    width: rem(6);
+  }
+}
+
+@media (width >= rem(700)) {
+  .service {
+    min-height: rem(200);
+    // border-radius: rem(15);
+    // overflow: hidden;
+    width: 100%;
+    &__name {
+      font-size: rem(40);
+      line-height: rem(48);
+      letter-spacing: rem(2);
+    }
+  }
+}
+
+@media (width >= rem(1024)) {
+  .service {
+    min-height: rem(308);
+  }
+}

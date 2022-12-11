@@ -12,4 +12,26 @@
 
 body {
   font-family: 'Jost', sans-serif;
+  color: $black;
+  max-width: rem(1440);
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+input,
+select {
+  font: inherit;
 }

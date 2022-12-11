@@ -1,0 +1,72 @@
+@use '../../../styles/' as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  min-height: rem(96);
+  padding-inline: rem(23);
+
+  &__hamburger {
+    width: rem(25);
+    aspect-ratio: 1;
+    @include backgroundImage(
+      '../../../assets/shared/mobile/icon-hamburger.svg'
+    );
+
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__menu {
+    display: none;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    font-size: rem(14);
+    line-height: rem(14);
+    letter-spacing: rem(2);
+    color: $black;
+    transition: 0.2s;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__logo {
+    width: rem(196);
+    height: rem(24);
+  }
+}
+
+@media (width>=rem(700)) {
+  .header {
+    justify-content: space-between;
+    padding-inline: rem(39);
+
+    &__hamburger {
+      display: none;
+    }
+
+    &__menu {
+      display: flex;
+      gap: rem(42);
+      margin-left: auto;
+    }
+  }
+}
+
+@media (width > rem(1024)) {
+  .header {
+    padding-inline: rem(165);
+  }
+}

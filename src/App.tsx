@@ -1,10 +1,15 @@
+import { Routes, Route } from 'react-router-dom';
+import { OurCompanyPage, LocationPage, ContactPage, Homepage } from './pages';
 import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Designo Multiple page</h1>
-    </div>
+    <Routes>
+      <Route path="/" element={<Homepage />} />
+      <Route path="/our-company" element={<OurCompanyPage />} />
+      <Route path="/location" element={<LocationPage />} />
+      <Route path="/contact" element={<ContactPage />} />
+    </Routes>
   );
 }
 

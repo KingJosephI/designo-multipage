@@ -1,0 +1,80 @@
+@use '../../styles/' as *;
+
+.lets-talk-section {
+  margin-inline: rem(28);
+  padding: rem(68) rem(25);
+  text-align: center;
+  background-color: $peach;
+  color: $white;
+  border-radius: rem(10);
+  @include backgroundImage(
+    '../../assets/shared/desktop/bg-pattern-call-to-action.svg'
+  );
+
+  &__title {
+    font-size: rem(32);
+    line-height: rem(36);
+    font-weight: 500;
+    padding-block-end: rem(6);
+    width: rem(300);
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__description {
+    font-size: rem(15);
+    line-height: rem(25);
+    margin-block-end: rem(32);
+  }
+
+  &__get-in-touch-button {
+    display: inline-block;
+    background-color: $white;
+    text-transform: uppercase;
+    padding: rem(20);
+    border-radius: rem(8);
+    transition: 0.2s;
+
+    &:hover {
+      background-color: $peach-light;
+      color: white;
+    }
+  }
+}
+
+@media (width>=rem(700)) {
+  .lets-talk-section {
+    padding-inline: rem(126);
+
+    &__title {
+      font-size: rem(40);
+      line-height: rem(40);
+    }
+
+    &__description {
+      font-size: rem(16);
+      line-height: rem(26);
+    }
+  }
+}
+@media (width>=rem(1024)) {
+  .lets-talk-section {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    padding-inline: rem(94);
+    margin-inline: rem(165);
+    align-items: center;
+
+    &__title {
+      width: 100%;
+      text-align: left;
+      padding-right: 60%;
+      padding-block-end: rem(20);
+    }
+
+    &__description {
+      padding-right: 45%;
+    }
+  }
+}
