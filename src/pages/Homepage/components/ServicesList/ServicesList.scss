@@ -6,7 +6,6 @@
   gap: rem(24);
 
   &__web {
-    background-color: teal;
     @include backgroundImage(
       '../../../../assets/home/desktop/image-web-design-small.jpg'
     );

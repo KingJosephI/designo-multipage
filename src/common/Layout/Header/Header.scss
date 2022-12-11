@@ -17,13 +17,11 @@
     background-color: transparent;
     cursor: pointer;
     margin-left: auto;
-    // background-color: purple;
   }
 
   &__navigation {
     display: flex;
     justify-content: space-between;
-    // background-color: blue;
     width: 100%;
   }
 
@@ -52,7 +50,6 @@
 
 @media (width>=rem(700)) {
   .header {
-    // display: f;
     justify-content: space-between;
     padding-inline: rem(39);
 

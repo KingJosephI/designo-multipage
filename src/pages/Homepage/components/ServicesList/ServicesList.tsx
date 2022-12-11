@@ -1,9 +1,7 @@
 import Service from '../../../../common/Service/Service';
-// import { useLocation } from 'react-router-dom';
 import './ServicesList.scss';
 
 const ServicesList = () => {
-  // const { pathname } = useLocation();
   return (
     <section className="services-list">
       <Service className="services-list__web" name="Web Design" url="/" />

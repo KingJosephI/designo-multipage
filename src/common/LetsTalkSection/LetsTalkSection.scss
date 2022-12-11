@@ -24,6 +24,7 @@
   &__description {
     font-size: rem(15);
     line-height: rem(25);
+    margin-block-end: rem(32);
   }
 
   &__get-in-touch-button {
@@ -32,7 +33,6 @@
     text-transform: uppercase;
     padding: rem(20);
     border-radius: rem(8);
-    margin-block-start: rem(32);
     transition: 0.2s;
 
     &:hover {
@@ -42,6 +42,21 @@
   }
 }
 
+@media (width>=rem(700)) {
+  .lets-talk-section {
+    padding-inline: rem(126);
+
+    &__title {
+      font-size: rem(40);
+      line-height: rem(40);
+    }
+
+    &__description {
+      font-size: rem(16);
+      line-height: rem(26);
+    }
+  }
+}
 @media (width>=rem(1024)) {
   .lets-talk-section {
     display: flex;
@@ -54,20 +69,16 @@
     &__title {
       width: 100%;
       text-align: left;
-      font-size: rem(40);
-      line-height: rem(40);
       padding-right: 60%;
       padding-block-end: rem(20);
     }
 
     &__description {
-      font-size: rem(16);
-      line-height: rem(26);
       padding-right: 45%;
     }
 
-    &__get-in-touch-button {
-      align-self: center;
-    }
+    // &__get-in-touch-button {
+    //   align-self: center;
+    // }
   }
 }

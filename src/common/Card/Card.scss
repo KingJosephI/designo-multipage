@@ -2,31 +2,14 @@
 
 .card {
   text-align: center;
-  text-align: center;
-  // background-b: ;
 
-  &:first-child {
-    .card__illustration {
-      background-image: url('../../assets/shared/desktop/bg-pattern-small-circle.svg');
-    }
-  }
-
-  &:nth-child(2) {
-    .card__illustration {
-      background-image: url('../../assets/shared/desktop/bg-pattern-small-circles.svg');
-    }
-  }
-  &:nth-child(3) {
-    .card__illustration {
-      background-image: url('../../assets/shared/desktop/bg-pattern-small-circles.svg');
-      // background-position: center;
-    }
-  }
   &__illustration {
     width: rem(202);
     border-radius: 50%;
     margin: 0 auto;
-    // background-color: teal;
+    @include backgroundImage(
+      '../../assets/shared/desktop/bg-pattern-small-circle.svg'
+    );
   }
 
   &__title {
