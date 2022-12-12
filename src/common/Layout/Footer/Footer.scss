@@ -1,18 +1,15 @@
 @use '../../../styles/' as *;
 
 .footer {
-  background-color: $black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  color: $white;
   gap: rem(40);
-  padding-top: rem(300);
-  padding-bottom: rem(64);
+  text-align: center;
+  background-color: $black;
+  color: $white;
+  padding: rem(300) rem(39) rem(64);
   margin-top: rem(-200);
-  padding-inline: rem(39);
-  // z-index: -100;
 
   &__logo {
     width: rem(202);
@@ -64,6 +61,47 @@
         cursor: pointer;
         color: $peach-light;
       }
+    }
+  }
+}
+
+@media (width >= rem(700)) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: rem(150);
+    margin-top: rem(-70);
+    text-align: left;
+
+    &__logo {
+      grid-column: 1/2;
+    }
+
+    &__links {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column: 2/4;
+      justify-items: end;
+      border-top: 0;
+      padding-top: 0;
+
+      & > *:not(:last-of-type) {
+        padding-bottom: 0;
+      }
+    }
+
+    &__address {
+      grid-column: 1/2;
+    }
+
+    &__contact {
+      grid-column: 2/3;
+    }
+
+    &__social-media {
+      grid-column: 3/4;
+      align-self: end;
+      justify-self: end;
     }
   }
 }
