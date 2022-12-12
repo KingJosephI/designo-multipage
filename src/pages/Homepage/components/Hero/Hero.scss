@@ -10,6 +10,7 @@
   background-image: url('../../../../assets/home/desktop/bg-pattern-hero-home.svg');
   background-repeat: no-repeat;
   background-position: top rem(105) right rem(-300);
+  min-height: rem(843);
 
   &__title {
     font-size: rem(32);
@@ -26,16 +27,27 @@
 
   &__learn-more-button {
     display: inline-block;
-    padding: rem(23) rem(25);
+    width: rem(152);
+    height: rem(56);
+    line-height: rem(56);
+    text-align: center;
     font-size: rem(15);
+    letter-spacing: rem(1);
     text-transform: uppercase;
     background-color: $white;
     border-radius: rem(8);
+    transition: 0.2s;
+
+    &:hover {
+      color: $white;
+      background-color: $peach-light;
+    }
   }
 
   &__image {
     margin-block: rem(80) rem(-200);
     width: rem(284);
+    // aspect-ratio: 1;
     margin-inline: auto;
   }
 }
@@ -72,6 +84,7 @@
     padding-inline: rem(95);
     margin-inline: rem(165);
     padding-block-start: rem(145);
+    min-height: rem(640);
 
     &__image {
       margin-block: 0;

@@ -23,13 +23,13 @@
   }
 }
 
-@media (width >=700) {
+@media (width >= rem(700)) {
   .services-list {
     padding-inline: rem(39);
   }
 }
 
-@media (width>=rem(1024)) {
+@media (width>= rem(1024)) {
   .services-list {
     padding-inline: rem(165);
     grid-template-columns: repeat(2, 1fr);
