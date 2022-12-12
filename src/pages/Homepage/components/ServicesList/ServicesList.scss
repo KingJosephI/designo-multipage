@@ -23,7 +23,7 @@
   }
 }
 
-@media (width >=700) {
+@media (width >= rem(700)) {
   .services-list {
     padding-inline: rem(39);
   }

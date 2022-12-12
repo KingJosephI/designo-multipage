@@ -11,26 +11,27 @@ import './Footer.scss';
 const Footer = () => {
   return (
     <footer className="footer">
-      <img className="footer__logo" src={footerLogo} alt="logo" />
+      <div>
+        <img className="footer__logo" src={footerLogo} alt="logo" />
 
-      <ul className="footer__links">
-        <li>
-          <Link className="footer__link" to="/our-company">
-            Our Company
-          </Link>
-        </li>
-        <li>
-          <Link className="footer__link" to="/location">
-            Locations
-          </Link>
-        </li>
-        <li>
-          <Link className="footer__link" to="/contact">
-            Contact
-          </Link>
-        </li>
-      </ul>
-
+        <ul className="footer__links">
+          <li>
+            <Link className="footer__link" to="/our-company">
+              Our Company
+            </Link>
+          </li>
+          <li>
+            <Link className="footer__link" to="/location">
+              Locations
+            </Link>
+          </li>
+          <li>
+            <Link className="footer__link" to="/contact">
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
       <div className="footer__address">
         <h2> Designo Central Office</h2>
         3886 Wellington Street <br />
