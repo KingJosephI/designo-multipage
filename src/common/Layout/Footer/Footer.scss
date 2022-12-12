@@ -1,0 +1,69 @@
+@use '../../../styles/' as *;
+
+.footer {
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: $white;
+  gap: rem(40);
+  padding-top: rem(300);
+  padding-bottom: rem(64);
+  margin-top: rem(-200);
+  padding-inline: rem(39);
+  // z-index: -100;
+
+  &__logo {
+    width: rem(202);
+    height: rem(27);
+  }
+
+  &__links {
+    border-top: rem(1) solid rgba(245, 245, 245, 0.3);
+    width: 100%;
+    padding-top: rem(32);
+
+    & > *:not(:last-of-type) {
+      padding-bottom: rem(20);
+    }
+  }
+
+  &__link {
+    color: $white;
+    text-transform: uppercase;
+    font-size: rem(14);
+    line-height: rem(14);
+    letter-spacing: rem(2);
+  }
+
+  &__contact,
+  &__address {
+    color: rgba(245, 245, 245, 0.591);
+
+    & * {
+      color: rgba(245, 245, 245, 0.591);
+      font-size: rem(16);
+      line-height: rem(26);
+    }
+
+    a:hover {
+      color: $white;
+    }
+  }
+
+  &__social-media {
+    display: flex;
+    gap: rem(16);
+
+    & > * {
+      font-size: rem(24);
+      color: $peach;
+
+      &:hover {
+        cursor: pointer;
+        color: $peach-light;
+      }
+    }
+  }
+}

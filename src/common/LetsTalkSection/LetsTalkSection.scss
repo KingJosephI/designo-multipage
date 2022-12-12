@@ -1,7 +1,9 @@
 @use '../../styles/' as *;
 
 .lets-talk-section {
-  margin-inline: rem(28);
+  // margin-inline: rem(28);
+  max-width: rem(327);
+  margin: 0 auto;
   padding: rem(68) rem(25);
   text-align: center;
   background-color: $peach;
@@ -10,15 +12,17 @@
   @include backgroundImage(
     '../../assets/shared/desktop/bg-pattern-call-to-action.svg'
   );
+  // z-index: 1000;
+  position: relative;
 
   &__title {
-    font-size: rem(32);
-    line-height: rem(36);
-    font-weight: 500;
-    padding-block-end: rem(6);
-    width: rem(300);
-    text-align: center;
     margin: 0 auto;
+    font-size: rem(32);
+    font-weight: 500;
+    line-height: rem(36);
+    padding-block-end: rem(6);
+    // width: rem(300);
+    text-align: center;
   }
 
   &__description {
@@ -31,7 +35,10 @@
     display: inline-block;
     background-color: $white;
     text-transform: uppercase;
-    padding: rem(20);
+    width: rem(152);
+    height: rem(56);
+    line-height: rem(56);
+    text-align: center;
     border-radius: rem(8);
     transition: 0.2s;
 
@@ -45,6 +52,7 @@
 @media (width>=rem(700)) {
   .lets-talk-section {
     padding-inline: rem(126);
+    max-width: rem(690);
 
     &__title {
       font-size: rem(40);
@@ -65,16 +73,19 @@
     padding-inline: rem(94);
     margin-inline: rem(165);
     align-items: center;
+    // max-width: rem(1111);
+    max-width: 100%;
 
     &__title {
       width: 100%;
       text-align: left;
-      padding-right: 60%;
+      padding-right: 45%;
       padding-block-end: rem(20);
     }
 
     &__description {
-      padding-right: 45%;
+      padding-right: 30%;
+      // width: 60%;
     }
   }
 }

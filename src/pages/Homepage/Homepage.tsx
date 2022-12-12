@@ -6,9 +6,9 @@ const Homepage = () => {
   return (
     <Layout>
       <main className="homepage">
-        <Hero />
+        {/* <Hero />
         <ServicesList />
-        <CardList />
+        <CardList />*/}
         <LetsTalkSection />
       </main>
     </Layout>
