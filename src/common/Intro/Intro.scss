@@ -2,4 +2,57 @@
 
 .intro {
   background-color: $peach;
+  color: $white;
+  min-height: rem(320);
+  text-align: center;
+  padding-inline: rem(39);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('../../assets/shared/oval.svg');
+  background-repeat: no-repeat;
+  background-size: rem(300);
+  background-position: top right;
+  // @include backgroundImage(
+  //   '../../assets/web-design/desktop/bg-pattern-intro-web.svg'
+  // );
+  &__title {
+    font-size: rem(32);
+    line-height: rem(36);
+    font-weight: 500;
+    margin-block-end: rem(24);
+  }
+
+  &__description {
+    font-size: rem(15);
+    line-height: rem(25);
+    font-weight: normal;
+  }
+}
+
+@media (width >= rem(700)) {
+  .intro {
+    background-image: url('../../assets/web-design/desktop/bg-pattern-intro-web.svg');
+    background-position: center;
+    background-size: cover;
+    margin-inline: rem(39);
+    border-radius: rem(15);
+
+    &__title {
+      font-size: rem(48);
+      line-height: rem(48);
+    }
+
+    &__description {
+      font-size: rem(16);
+      line-height: rem(26);
+      padding-inline: rem(150);
+    }
+  }
+}
+
+@media (width >= rem(1024)) {
+  .intro {
+    margin-inline: rem(165);
+  }
 }

@@ -1,4 +1,4 @@
-import { Layout, Intro } from '../../common';
+import { Layout, Intro, LetsTalkSection } from '../../common';
 
 const AppDesign = () => {
   return (
@@ -7,6 +7,7 @@ const AppDesign = () => {
         title="App Design"
         description="Our mobile designs bring intuitive digital solutions to your customers right at their fingertips."
       />
+      <LetsTalkSection />
     </Layout>
   );
 };
