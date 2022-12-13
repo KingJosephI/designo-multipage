@@ -1,0 +1,67 @@
+@use '../../styles/' as *;
+
+.portfolio-card {
+  width: rem(327);
+  border-radius: rem(15);
+  overflow: hidden;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: $peach;
+    cursor: pointer;
+
+    h2 {
+      color: $white;
+    }
+
+    & > * {
+      color: $white;
+    }
+  }
+
+  &__image {
+    width: inherit;
+    height: rem(320);
+  }
+
+  &__content {
+    background-color: rgba(231, 130, 107, 0.2);
+    padding: rem(38) rem(44);
+    text-align: center;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: rem(20);
+    line-height: rem(26);
+    letter-spacing: rem(5);
+    font-weight: 500;
+    color: $peach;
+    padding-block-end: rem(16);
+  }
+
+  &__description {
+    font-size: rem(16);
+    line-height: rem(26);
+    font-weight: normal;
+  }
+}
+
+@media (width >= rem(700)) and (width < rem(1024)) {
+  .portfolio-card {
+    width: 100%;
+    display: flex;
+
+    &__image {
+      width: 50%;
+      height: rem(310);
+    }
+
+    &__content {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
