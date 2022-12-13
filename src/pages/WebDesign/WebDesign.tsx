@@ -13,7 +13,7 @@ import photonImage from '../../assets/web-design/desktop/image-photon.jpg';
 import transferImage from '../../assets/web-design/desktop/image-transfer.jpg';
 
 const WebDesign = () => {
-  const portfolio = [
+  const WebDesignPortfolio = [
     {
       id: 1,
       title: 'Express',
@@ -66,7 +66,7 @@ const WebDesign = () => {
         title="Web Design"
         description="We build websites that serve as powerful marketing tools and bring memorable brand experiences."
       />
-      <Portfolio data={portfolio} />
+      <Portfolio data={WebDesignPortfolio} />
       <ServicesList />
       <LetsTalkSection />
     </Layout>
