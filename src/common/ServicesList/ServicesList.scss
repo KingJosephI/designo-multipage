@@ -1,4 +1,4 @@
-@use '../../../../styles/' as *;
+@use '../../styles/' as *;
 
 .services-list {
   padding-inline: rem(23);
@@ -8,18 +8,16 @@
 
   &__web {
     @include backgroundImage(
-      '../../../../assets/home/desktop/image-web-design-small.jpg'
+      '../../assets/home/desktop/image-web-design-small.jpg'
     );
   }
 
   &__app {
-    @include backgroundImage(
-      '../../../../assets/home/desktop/image-app-design.jpg'
-    );
+    @include backgroundImage('../../assets/home/desktop/image-app-design.jpg');
   }
   &__graphic {
     @include backgroundImage(
-      '../../../../assets/home/desktop/image-graphic-design.jpg'
+      '../../assets/home/desktop/image-graphic-design.jpg'
     );
   }
 }
@@ -39,7 +37,7 @@
       grid-column: 1/2;
       grid-row: 1/3;
       @include backgroundImage(
-        '../../../../assets/home/desktop/image-web-design-large.jpg'
+        '../../assets/home/desktop/image-web-design-large.jpg'
       );
     }
 
@@ -56,20 +54,19 @@
 }
 .services {
   display: flex;
-  margin-inline: rem(165);
+  flex-direction: column;
   gap: rem(24);
+  margin-inline: rem(39);
+  margin-block: rem(96);
 
-  margin-block: rem(160);
-
-  @media (width < rem(700)) {
-    flex-direction: column;
-    gap: rem(24);
-
+  @media (width >= rem(700)) {
     margin-inline: rem(39);
+    margin-block: rem(120);
   }
 
-  @media (width >= rem(700)) and (width < rem(1024)) {
-    flex-direction: column;
-    margin-inline: rem(39);
+  @media (width >= rem(1024)) {
+    flex-direction: row;
+    margin-inline: rem(165);
+    margin-block: rem(160);
   }
 }

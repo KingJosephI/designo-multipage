@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import rightArrow from '../../assets/shared/desktop/icon-right-arrow.svg';
+import rightArrow from '../../../assets/shared/desktop/icon-right-arrow.svg';
 import './Service.scss';
 
 interface IService extends React.BaseHTMLAttributes<HTMLDivElement> {

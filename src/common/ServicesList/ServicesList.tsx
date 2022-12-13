@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import Service from '../../../../common/Service/Service';
+import Service from './Service/Service';
 import './ServicesList.scss';
 
 const ServicesList = () => {

@@ -1,5 +1,5 @@
-import { Intro, Layout, LetsTalkSection } from '../../common';
-import { ServicesList } from '../Homepage/components';
+import { Intro, Layout, LetsTalkSection, ServicesList } from '../../common';
+// import { ServicesList } from '../Homepage/components';
 
 const WebDesign = () => {
   return (
