@@ -1,0 +1,18 @@
+@use '../../styles/' as *;
+
+.portfolio {
+  display: grid;
+  gap: rem(40);
+  margin-top: rem(96);
+  width: 100%;
+  padding-inline: rem(39);
+  justify-content: center;
+  // background-color: teal;
+}
+
+@media (width>=rem(1024)) {
+  .portfolio {
+    padding-inline: rem(165);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

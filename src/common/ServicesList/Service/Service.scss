@@ -1,4 +1,4 @@
-@use '../../styles/' as *;
+@use '../../../styles/' as *;
 
 .service {
   border-radius: rem(15);
@@ -31,14 +31,17 @@
     display: block;
     width: rem(6);
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 @media (width >= rem(700)) {
   .service {
     min-height: rem(200);
-    // border-radius: rem(15);
-    // overflow: hidden;
     width: 100%;
+
     &__name {
       font-size: rem(40);
       line-height: rem(48);
