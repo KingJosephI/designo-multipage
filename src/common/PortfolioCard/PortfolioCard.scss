@@ -1,7 +1,7 @@
 @use '../../styles/' as *;
 
 .portfolio-card {
-  width: rem(327);
+  max-width: rem(327);
   border-radius: rem(15);
   overflow: hidden;
   transition: 0.2s;
@@ -49,16 +49,15 @@
 
 @media (width >= rem(700)) and (width < rem(1024)) {
   .portfolio-card {
-    width: 100%;
     display: flex;
+    max-width: 100%;
+    min-height: rem(310);
 
     &__image {
-      width: 50%;
       height: rem(310);
     }
 
     &__content {
-      width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: center;

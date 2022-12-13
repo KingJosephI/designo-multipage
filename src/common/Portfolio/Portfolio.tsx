@@ -5,7 +5,7 @@ interface IPortfolio extends React.BaseHTMLAttributes<HTMLDivElement> {
   data?: Array<any>;
 }
 
-const Portfolio = ({ data, ...props }: IPortfolio) => {
+const Portfolio = ({ data = [], ...props }: IPortfolio) => {
   return (
     <section className="portfolio" {...props}>
       {data?.map(({ title, description, image, id }) => (
