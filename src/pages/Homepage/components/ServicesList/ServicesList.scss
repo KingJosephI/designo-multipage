@@ -4,6 +4,7 @@
   padding-inline: rem(23);
   display: grid;
   gap: rem(24);
+  width: 100%;
 
   &__web {
     @include backgroundImage(
@@ -51,5 +52,24 @@
       grid-column: 2/3;
       grid-row: 2/3;
     }
+  }
+}
+.services {
+  display: flex;
+  margin-inline: rem(165);
+  gap: rem(24);
+
+  margin-block: rem(160);
+
+  @media (width < rem(700)) {
+    flex-direction: column;
+    gap: rem(24);
+
+    margin-inline: rem(39);
+  }
+
+  @media (width >= rem(700)) and (width < rem(1024)) {
+    flex-direction: column;
+    margin-inline: rem(39);
   }
 }
