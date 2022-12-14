@@ -12,6 +12,7 @@ main {
 .about,
 .world-class,
 .real-deal {
+  min-height: rem(480);
   &__content {
     padding: rem(84) rem(35);
     text-align: center;
@@ -78,7 +79,9 @@ main {
 
     @media (width >= rem(1024)) {
       background-image: url('../../assets/about/desktop/bg-pattern-hero-about-desktop.svg');
+      background-position: center;
       background-position: bottom;
+      background-size: 100%;
     }
   }
 }
