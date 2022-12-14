@@ -12,15 +12,10 @@ main {
 .about,
 .world-class,
 .real-deal {
-  background-color: $peach;
-
   &__content {
     padding: rem(84) rem(35);
     text-align: center;
     color: $white;
-    background-image: url('../../assets/about/mobile/bg-pattern-hero-about-mobile.svg');
-    background-repeat: no-repeat;
-    background-position: top rem(-100) right rem(0);
   }
 
   &__title {
@@ -41,6 +36,7 @@ main {
     overflow: hidden;
     margin-inline: rem(39);
   }
+
   @media (width >= rem(1024)) {
     margin-inline: rem(165);
     display: grid;
@@ -67,23 +63,60 @@ main {
   }
 }
 
+.about {
+  background-color: $peach;
+
+  &__content {
+    background-image: url('../../assets/about/mobile/bg-pattern-hero-about-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top rem(-100) right;
+
+    @media (width >= rem(700)) {
+      background-position: top rem(-250) left rem(-1000);
+      background-size: rem(1400);
+    }
+
+    @media (width >= rem(1024)) {
+      background-image: url('../../assets/about/desktop/bg-pattern-hero-about-desktop.svg');
+      background-position: bottom;
+    }
+  }
+}
 .real-deal {
   margin-bottom: rem(120);
+}
+.world-class {
+  grid-template-columns: 1fr 2fr;
+
+  &__image {
+    grid-column: 1/2;
+  }
+
+  &__content {
+    grid-column: 2/3;
+  }
+  // margin-bottom: rem(120);
 }
 
 .world-class,
 .real-deal {
   background-color: rgba(231, 130, 107, 0.2);
-  @include backgroundImage(
-    '../../assets/about/desktop/bg-pattern-hero-about-desktop.svg'
-  );
-  // background-repeat: repeat;
+
   &__title {
     color: $peach;
   }
 
   &__description {
     color: $black;
+  }
+
+  &__content {
+    // background-image: url('../../assets/shared/desktop/bg-pattern-leaf.svg');
+    background-image: url('../../assets/shared/desktop/bg-pattern-three-circles.svg');
+
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 

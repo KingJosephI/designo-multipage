@@ -13,8 +13,13 @@ import ukIllustration from '../../assets/shared/desktop/illustration-united-king
 import australiaIllustration from '../../assets/shared/desktop/illustration-australia.svg';
 import canadaIllustration from '../../assets/shared/desktop/illustration-canada.svg';
 import './OurCompany.scss';
+import { useEffect } from 'react';
 
 const OurCompany = () => {
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
   return (
     <Layout>
       <main className="container">
@@ -58,6 +63,7 @@ const OurCompany = () => {
               ensuring success in its given market. We are constantly updating
               our skills in a myriad of platforms.
             </p>
+            <br />
             <p className="world-class__description">
               Our team is multi-disciplinary and we are not merely interested in
               form — content and meaning are just as important. We give great
@@ -128,6 +134,7 @@ const OurCompany = () => {
               perspective to every opportunity. We make design and technology
               more accessible and give you tools to measure success.
             </p>
+            <br />
             <p className="real-deal__description">
               We are visual storytellers in appealing and captivating ways. By
               combining business and marketing strategies, we inspire audiences
