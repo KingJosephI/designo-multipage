@@ -1,0 +1,136 @@
+@use '../../styles/' as *;
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  @media (width >= rem(700)) {
+    gap: rem(120);
+  }
+}
+
+.about,
+.world-class,
+.real-deal {
+  background-color: $peach;
+
+  &__content {
+    padding: rem(84) rem(35);
+    text-align: center;
+    color: $white;
+    background-image: url('../../assets/about/mobile/bg-pattern-hero-about-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top rem(-100) right rem(0);
+  }
+
+  &__title {
+    font-size: rem(32);
+    line-height: rem(36);
+    font-weight: 500;
+    padding-block-end: rem(24);
+  }
+
+  &__description {
+    font-size: rem(15);
+    line-height: rem(25);
+    font-weight: normal;
+  }
+
+  @media (width >= rem(700)) {
+    border-radius: rem(15);
+    overflow: hidden;
+    margin-inline: rem(39);
+  }
+  @media (width >= rem(1024)) {
+    margin-inline: rem(165);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    &__content {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      text-align: left;
+      padding: 0;
+      padding-inline: clamp(rem(20), rem(94), rem(94));
+      display: grid;
+      align-content: center;
+      background-image: url('../../assets/about/desktop/bg-pattern-hero-about-desktop.svg');
+      background-position: bottom;
+    }
+    &__image {
+      grid-column: 2/3;
+      grid-row: 1/2;
+
+      height: 100%;
+      min-width: rem(467);
+    }
+  }
+}
+
+.real-deal {
+  margin-bottom: rem(120);
+}
+
+.world-class,
+.real-deal {
+  background-color: rgba(231, 130, 107, 0.2);
+  @include backgroundImage(
+    '../../assets/about/desktop/bg-pattern-hero-about-desktop.svg'
+  );
+  // background-repeat: repeat;
+  &__title {
+    color: $peach;
+  }
+
+  &__description {
+    color: $black;
+  }
+}
+
+.locations {
+  display: grid;
+  gap: rem(80);
+  padding-block: rem(120);
+  .location {
+    text-align: center;
+
+    &__illustration {
+      width: rem(182);
+      margin-inline: auto;
+      background-image: url('../../assets/shared/desktop/bg-pattern-small-circle.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 50%;
+      // background-color: teal;
+    }
+
+    &__title {
+      font-size: rem(20);
+      line-height: rem(26);
+      font-weight: 500;
+      letter-spacing: rem(5);
+      padding-block: rem(48) rem(32);
+      text-transform: uppercase;
+    }
+    &__button {
+      display: inline-block;
+      background-color: $peach;
+      color: $white;
+      text-transform: uppercase;
+      padding: rem(15) rem(30);
+      border-radius: rem(8);
+      font-size: rem(15);
+      letter-spacing: rem(1);
+      transition: 0.2s;
+
+      &:hover {
+        background-color: $peach-light;
+      }
+    }
+  }
+  @media (width >=rem(1024)) {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: rem(165);
+  }
+}
