@@ -123,50 +123,50 @@ main {
   }
 }
 
-.locations {
-  display: grid;
-  gap: rem(80);
-  padding-block: rem(120);
-  .location {
-    text-align: center;
+// .locations {
+//   display: grid;
+//   gap: rem(80);
+//   padding-block: rem(120);
+//   .location {
+//     text-align: center;
 
-    &__illustration {
-      width: rem(182);
-      margin-inline: auto;
-      background-image: url('../../assets/shared/desktop/bg-pattern-small-circle.svg');
-      background-repeat: no-repeat;
-      background-position: center;
-      border-radius: 50%;
-      // background-color: teal;
-    }
+//     &__illustration {
+//       width: rem(182);
+//       margin-inline: auto;
+//       background-image: url('../../assets/shared/desktop/bg-pattern-small-circle.svg');
+//       background-repeat: no-repeat;
+//       background-position: center;
+//       border-radius: 50%;
+//       // background-color: teal;
+//     }
 
-    &__title {
-      font-size: rem(20);
-      line-height: rem(26);
-      font-weight: 500;
-      letter-spacing: rem(5);
-      padding-block: rem(48) rem(32);
-      text-transform: uppercase;
-    }
-    &__button {
-      display: inline-block;
-      background-color: $peach;
-      color: $white;
-      text-transform: uppercase;
-      padding: rem(15) rem(30);
-      border-radius: rem(8);
-      font-size: rem(15);
-      letter-spacing: rem(1);
-      transition: 0.2s;
+//     &__title {
+//       font-size: rem(20);
+//       line-height: rem(26);
+//       font-weight: 500;
+//       letter-spacing: rem(5);
+//       padding-block: rem(48) rem(32);
+//       text-transform: uppercase;
+//     }
+//     &__button {
+//       display: inline-block;
+//       background-color: $peach;
+//       color: $white;
+//       text-transform: uppercase;
+//       padding: rem(15) rem(30);
+//       border-radius: rem(8);
+//       font-size: rem(15);
+//       letter-spacing: rem(1);
+//       transition: 0.2s;
 
-      &:hover {
-        background-color: $peach-light;
-      }
-    }
-  }
-  @media (width >=rem(1024)) {
-    display: flex;
-    justify-content: space-between;
-    padding-inline: rem(165);
-  }
-}
+//       &:hover {
+//         background-color: $peach-light;
+//       }
+//     }
+//   }
+//   @media (width >=rem(1024)) {
+//     display: flex;
+//     justify-content: space-between;
+//     padding-inline: rem(165);
+//   }
+// }

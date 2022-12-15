@@ -4,3 +4,4 @@ export { default as Intro } from './Intro/Intro';
 export { default as LetsTalkSection } from './LetsTalkSection/LetsTalkSection';
 export { default as ServicesList } from './ServicesList/ServicesList';
 export { default as Portfolio } from './Portfolio/Portfolio';
+export { default as Locations } from './Locations/Locations';

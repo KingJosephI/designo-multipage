@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom';
-import { Layout, LetsTalkSection } from '../../common';
+import { useEffect } from 'react';
+// import { Link } from 'react-router-dom';
+import { Layout, LetsTalkSection, Locations } from '../../common';
 import aboutHeroImage from '../../assets/about/desktop/image-about-hero.jpg';
 import aboutHeroImageMobile from '../../assets/about/mobile/image-about-hero.jpg';
 import aboutHeroImageTablet from '../../assets/about/tablet/image-about-hero.jpg';
@@ -9,11 +10,11 @@ import realDealImageTablet from '../../assets/about/tablet/image-real-deal.jpg';
 import worldClassImage from '../../assets/about/desktop/image-world-class-talent.jpg';
 import worldClassImageTablet from '../../assets/about/tablet/image-world-class-talent.jpg';
 import worldClassImageMobile from '../../assets/about/mobile/image-world-class-talent.jpg';
-import ukIllustration from '../../assets/shared/desktop/illustration-united-kingdom.svg';
-import australiaIllustration from '../../assets/shared/desktop/illustration-australia.svg';
-import canadaIllustration from '../../assets/shared/desktop/illustration-canada.svg';
+// import ukIllustration from '../../assets/shared/desktop/illustration-united-kingdom.svg';
+// import australiaIllustration from '../../assets/shared/desktop/illustration-australia.svg';
+// import canadaIllustration from '../../assets/shared/desktop/illustration-canada.svg';
 import './OurCompany.scss';
-import { useEffect } from 'react';
+// import Locations from '../../common/Locations/Locations';
 
 const OurCompany = () => {
   useEffect(() => {
@@ -73,7 +74,7 @@ const OurCompany = () => {
             </p>
           </div>
         </section>
-        <section className="locations">
+        {/* <section className="locations">
           <article className="location">
             <img
               className="location__illustration"
@@ -113,8 +114,8 @@ const OurCompany = () => {
               </Link>
             </div>
           </article>
-        </section>
-
+        </section> */}
+        <Locations />
         <section className="real-deal">
           <picture>
             <source media="(min-width:1024px)" srcSet={realDealImage} />

@@ -6,11 +6,7 @@ const Contact = () => {
     // 👇️ scroll to top on page load
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   }, []);
-  return (
-    <Layout>
-      <h1>Contact</h1>
-    </Layout>
-  );
+  return <Layout></Layout>;
 };
 
 export default Contact;
