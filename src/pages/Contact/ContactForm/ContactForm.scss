@@ -86,6 +86,14 @@
     // background-position: top left rem(-100);
 
     text-align: left;
+
+    border-radius: rem(15);
+    margin-inline: rem(39);
+
+    &__fields-container {
+      display: flex;
+      flex-direction: column;
+    }
     &__title {
       font-size: rem(48);
       line-height: rem(48);
@@ -106,16 +114,13 @@
   .contact-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: rem(50);
+    gap: rem(150);
+    margin-inline: rem(165);
+    padding-inline: rem(95);
+    background-position: top rem(-100) left;
 
     &__introduction {
       align-self: center;
-      // background-color: yellow;
-    }
-
-    &__submit-button {
-      // justify-self: end;
-      // background-color: yellow;
     }
   }
 }
