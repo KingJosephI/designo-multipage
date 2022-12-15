@@ -11,6 +11,7 @@ import builderImage from '../../assets/web-design/desktop/image-builder.jpg';
 import campImage from '../../assets/web-design/desktop/image-camp.jpg';
 import photonImage from '../../assets/web-design/desktop/image-photon.jpg';
 import transferImage from '../../assets/web-design/desktop/image-transfer.jpg';
+import { useEffect } from 'react';
 
 const WebDesign = () => {
   const WebDesignPortfolio = [
@@ -60,6 +61,10 @@ const WebDesign = () => {
       image: campImage,
     },
   ];
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
   return (
     <Layout>
       <Intro

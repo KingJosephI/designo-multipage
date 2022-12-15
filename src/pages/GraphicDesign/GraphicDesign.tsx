@@ -9,6 +9,7 @@ import {
 import boxedWaterImage from '../../assets/graphic-design/desktop/image-boxed-water.jpg';
 import scienceImage from '../../assets/graphic-design/desktop/image-science.jpg';
 import changeImage from '../../assets/graphic-design/desktop/image-change.jpg';
+import { useEffect } from 'react';
 
 const GraphicDesign = () => {
   const GraphicDesignPortfolio = [
@@ -34,6 +35,10 @@ const GraphicDesign = () => {
       image: scienceImage,
     },
   ];
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
   return (
     <Layout>
       <Intro

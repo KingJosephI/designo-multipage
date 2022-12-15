@@ -1,0 +1,126 @@
+@use '../../../styles/' as *;
+
+.contact-form {
+  padding: rem(76) rem(39);
+  background-color: $peach;
+  color: $white;
+  text-align: center;
+
+  background-image: url('../../../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg');
+  background-position: top left rem(-100);
+  background-repeat: no-repeat;
+
+  &__title {
+    font-size: rem(32);
+    line-height: rem(36);
+    font-weight: 500;
+  }
+
+  &__description {
+    font-size: rem(15);
+    line-height: rem(25);
+    font-weight: normal;
+    padding-block: rem(24) rem(48);
+  }
+  &__field {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    padding-block: rem(15);
+    border-bottom: rem(2) solid rgba(255, 255, 255, 0.5);
+    outline: none;
+    font-size: rem(15);
+    line-height: rem(26);
+    color: $white;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+      font-weight: 500;
+      font-size: rem(15);
+      line-height: rem(26);
+    }
+
+    &:not(:first-child) {
+      margin-top: rem(15);
+    }
+
+    &:hover {
+      border-bottom-color: $white;
+
+      &::placeholder {
+        color: $white;
+      }
+    }
+  }
+
+  &__textarea {
+    min-height: rem(100);
+    font-family: inherit;
+  }
+
+  &__submit-button {
+    display: inline-block;
+    width: rem(152);
+    height: rem(56);
+    border: none;
+    text-transform: uppercase;
+    font-family: inherit;
+    border-radius: rem(8);
+    margin-block-start: rem(40);
+    transition: 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $peach-light;
+      color: $white;
+    }
+  }
+}
+@media (width >= rem(700)) {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../../../assets/contact/desktop/bg-pattern-hero-desktop.svg');
+    background-position: top rem(-100) left rem(-100);
+    // background-position: top left rem(-100);
+
+    text-align: left;
+
+    border-radius: rem(15);
+    margin-inline: rem(39);
+
+    &__fields-container {
+      display: flex;
+      flex-direction: column;
+    }
+    &__title {
+      font-size: rem(48);
+      line-height: rem(48);
+    }
+
+    &__description {
+      font-size: rem(16);
+      line-height: rem(26);
+    }
+
+    &__submit-button {
+      margin-left: auto;
+    }
+  }
+}
+
+@media (width >= rem(1024)) {
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: rem(150);
+    margin-inline: rem(165);
+    padding-inline: rem(95);
+    background-position: top rem(-100) left;
+
+    &__introduction {
+      align-self: center;
+    }
+  }
+}

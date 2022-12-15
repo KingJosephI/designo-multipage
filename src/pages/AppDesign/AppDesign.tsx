@@ -10,6 +10,7 @@ import eyecamImage from '../../assets/app-design/desktop/image-eyecam.jpg';
 import faceitImage from '../../assets/app-design/desktop/image-faceit.jpg';
 import loopstudiosImage from '../../assets/app-design/desktop/image-loopstudios.jpg';
 import todoImage from '../../assets/app-design/desktop/image-todo.jpg';
+import { useEffect } from 'react';
 
 // import { ServicesList } from '../Homepage/components';
 
@@ -51,6 +52,10 @@ const AppDesign = () => {
       image: loopstudiosImage,
     },
   ];
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
   return (
     <Layout>
       <Intro
