@@ -3,7 +3,7 @@ import './ContactForm.scss';
 const ContactForm = () => {
   return (
     <form className="contact-form">
-      <div className="contact__introduction">
+      <div className="contact-form__introduction">
         <h1 className="contact-form__title">Contact Us</h1>
         <p className="contact-form__description">
           Ready to take it to the next level? Let’s talk about your project or
@@ -36,8 +36,8 @@ const ContactForm = () => {
           className="contact-form__field contact-form__textarea"
           placeholder="Your Message"
         ></textarea>
+        <button className="contact-form__submit-button">Submit</button>
       </div>
-      <button className="contact-form__submit-button">Submit</button>
     </form>
   );
 };

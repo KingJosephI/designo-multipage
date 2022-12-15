@@ -60,6 +60,7 @@
   }
 
   &__submit-button {
+    display: inline-block;
     width: rem(152);
     height: rem(56);
     border: none;
@@ -73,6 +74,48 @@
       cursor: pointer;
       background-color: $peach-light;
       color: $white;
+    }
+  }
+}
+@media (width >= rem(700)) {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../../../assets/contact/desktop/bg-pattern-hero-desktop.svg');
+    background-position: top rem(-100) left rem(-100);
+    // background-position: top left rem(-100);
+
+    text-align: left;
+    &__title {
+      font-size: rem(48);
+      line-height: rem(48);
+    }
+
+    &__description {
+      font-size: rem(16);
+      line-height: rem(26);
+    }
+
+    &__submit-button {
+      margin-left: auto;
+    }
+  }
+}
+
+@media (width >= rem(1024)) {
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: rem(50);
+
+    &__introduction {
+      align-self: center;
+      // background-color: yellow;
+    }
+
+    &__submit-button {
+      // justify-self: end;
+      // background-color: yellow;
     }
   }
 }
