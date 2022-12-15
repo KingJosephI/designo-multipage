@@ -3,10 +3,15 @@ import ukIllustration from '../../assets/shared/desktop/illustration-united-king
 import australiaIllustration from '../../assets/shared/desktop/illustration-australia.svg';
 import canadaIllustration from '../../assets/shared/desktop/illustration-canada.svg';
 import './Locations.scss';
+import React from 'react';
 
-const Locations = () => {
+interface ILocations extends React.BaseHTMLAttributes<HTMLDivElement> {
+  children?: React.ReactNode;
+}
+
+const Locations = ({ ...props }: ILocations) => {
   return (
-    <section className="locations">
+    <section className="locations" {...props}>
       <article className="location">
         <img
           className="location__illustration"

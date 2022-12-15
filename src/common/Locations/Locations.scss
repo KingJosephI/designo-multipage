@@ -4,6 +4,8 @@
   display: grid;
   gap: rem(80);
   padding-block: rem(120);
+  position: relative;
+  z-index: 9999;
 
   @media (width >=rem(1024)) {
     display: flex;

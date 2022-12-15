@@ -1,0 +1,78 @@
+@use '../../../styles/' as *;
+
+.contact-form {
+  padding: rem(76) rem(39);
+  background-color: $peach;
+  color: $white;
+  text-align: center;
+
+  background-image: url('../../../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg');
+  background-position: top left rem(-100);
+  background-repeat: no-repeat;
+
+  &__title {
+    font-size: rem(32);
+    line-height: rem(36);
+    font-weight: 500;
+  }
+
+  &__description {
+    font-size: rem(15);
+    line-height: rem(25);
+    font-weight: normal;
+    padding-block: rem(24) rem(48);
+  }
+  &__field {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    padding-block: rem(15);
+    border-bottom: rem(2) solid rgba(255, 255, 255, 0.5);
+    outline: none;
+    font-size: rem(15);
+    line-height: rem(26);
+    color: $white;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+      font-weight: 500;
+      font-size: rem(15);
+      line-height: rem(26);
+    }
+
+    &:not(:first-child) {
+      margin-top: rem(15);
+    }
+
+    &:hover {
+      border-bottom-color: $white;
+
+      &::placeholder {
+        color: $white;
+      }
+    }
+  }
+
+  &__textarea {
+    min-height: rem(100);
+    font-family: inherit;
+  }
+
+  &__submit-button {
+    width: rem(152);
+    height: rem(56);
+    border: none;
+    text-transform: uppercase;
+    font-family: inherit;
+    border-radius: rem(8);
+    margin-block-start: rem(40);
+    transition: 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $peach-light;
+      color: $white;
+    }
+  }
+}

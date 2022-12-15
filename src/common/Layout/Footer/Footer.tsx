@@ -1,16 +1,21 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
-import footerLogo from '../../../assets/shared/desktop/logo-light.png';
 import {
   AiFillFacebook,
   AiFillYoutube,
   AiOutlineTwitter,
 } from 'react-icons/ai';
 import { FaInstagram, FaPinterest } from 'react-icons/fa';
+import footerLogo from '../../../assets/shared/desktop/logo-light.png';
 import './Footer.scss';
 
-const Footer = () => {
+interface IFooter extends React.BaseHTMLAttributes<HTMLDivElement> {
+  children?: React.ReactNode;
+}
+
+const Footer = ({ ...props }: IFooter) => {
   return (
-    <footer className="footer">
+    <footer className="footer" {...props}>
       <div>
         <img className="footer__logo" src={footerLogo} alt="logo" />
 
