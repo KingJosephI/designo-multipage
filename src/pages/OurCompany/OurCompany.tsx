@@ -19,7 +19,7 @@ const OurCompany = () => {
   }, []);
   return (
     <Layout>
-      <main className="container">
+      <main className="our-company__container">
         <section className="about">
           <picture>
             <source media="(min-width:1024px)" srcSet={aboutHeroImage} />
