@@ -1,7 +1,7 @@
 import { Layout, LetsTalkSection } from '../../common';
-import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
+
 import './LocationPage.scss';
+import MyMap from './MyMap';
 
 const Location = () => {
   return (
@@ -9,7 +9,8 @@ const Location = () => {
       <main className="location-main">
         <section className="country-location">
           <div className="country-location__map">
-            <MapContainer
+            <MyMap />
+            {/* <MapContainer
               center={[4.0383, 21.7587]}
               zoom={13}
               scrollWheelZoom={false}
@@ -23,7 +24,7 @@ const Location = () => {
                   A pretty CSS3 popup. <br /> Easily customizable.
                 </Popup>
               </Marker>
-            </MapContainer>
+            </MapContainer> */}
           </div>
           <div className="country-location__content">
             <h2 className="country-location__title">Canada</h2>

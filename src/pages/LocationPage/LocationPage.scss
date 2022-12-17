@@ -10,7 +10,8 @@
 
   &__map {
     min-height: rem(400);
-    background-color: teal;
+    width: 100%;
+    background-color: rgba(0, 128, 128, 0.038);
   }
   &__content {
     background-color: rgba(231, 130, 107, 0.2);
