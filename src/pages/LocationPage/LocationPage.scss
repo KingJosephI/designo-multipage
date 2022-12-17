@@ -11,7 +11,7 @@
   &__map {
     min-height: rem(400);
     width: 100%;
-    background-color: rgba(0, 128, 128, 0.038);
+    overflow: hidden;
   }
   &__content {
     background-color: rgba(231, 130, 107, 0.2);
@@ -49,6 +49,9 @@
     margin-inline: rem(39);
   }
   .country-location {
+    &__map {
+      height: rem(326);
+    }
     & > * {
       border-radius: rem(15);
 

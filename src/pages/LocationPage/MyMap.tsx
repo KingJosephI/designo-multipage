@@ -1,21 +1,31 @@
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-
-// import { Icon } from 'leaflet';
-// import * as parkData from './data/skateboard-parks.json';
+import mapboxgl from 'mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
+import { useEffect, useRef, useState } from 'react';
+import './MyMap.scss';
 
 function MyMap() {
+  mapboxgl.accessToken =
+    'pk.eyJ1IjoiamthYmVtYmEyMDIzIiwiYSI6ImNsYnMxbXJzaDBtMnQzb3FkMGN1N21zMHgifQ.z1h3DFIQvWMqxd4YN_XiKQ';
+  const mapContainer = useRef(null);
+  const map = useRef(null);
+  const [lng] = useState(-70.9);
+  const [lat] = useState(42.35);
+  const [zoom] = useState(9);
+
+  useEffect(() => {
+    if (map.current) return; // initialize map only once
+    map.current = new mapboxgl.Map({
+      container: mapContainer.current,
+      style: 'mapbox://styles/mapbox/streets-v12',
+      center: [lng, lat],
+      zoom: zoom,
+    });
+  });
   return (
-    <MapContainer
-    // style={{ backgroundColor: 'teal' }}
-    // center={[45.4, -75.7]}
-    // zoom={12}
-    // scrollWheelZoom={false}
-    >
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-      />
-    </MapContainer>
+    <div
+      style={{ width: '100%', height: '100%' }}
+      ref={mapContainer}
+      className="map-container"
+    />
   );
 }
 

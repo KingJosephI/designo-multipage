@@ -48,7 +48,9 @@ const Location = () => {
           </div>
         </section>
         <section className="country-location">
-          <div className="country-location__map"></div>
+          <div className="country-location__map">
+            <MyMap />
+          </div>
           <div className="country-location__content">
             <h2 className="country-location__title">Australia</h2>
             <div className="country-location__contact">
@@ -71,7 +73,9 @@ const Location = () => {
           </div>
         </section>
         <section className="country-location">
-          <div className="country-location__map"></div>
+          <div className="country-location__map">
+            <MyMap />
+          </div>
           <div className="country-location__content">
             <h2 className="country-location__title">United Kingdom</h2>
             <div className="country-location__contact">
