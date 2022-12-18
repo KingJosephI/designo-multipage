@@ -3,12 +3,6 @@ import logo from '../../../assets/shared/desktop/logo-dark.png';
 import './Header.scss';
 
 const Header = () => {
-  let activeStyle = {
-    textDecoration: 'underline',
-  };
-
-  let activeClassName = 'underline';
-
   return (
     <header className="header">
       <NavLink

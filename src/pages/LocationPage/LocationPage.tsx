@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Layout, LetsTalkSection } from '../../common';
-import MyMap from './MyMap';
 import './LocationPage.scss';
+import MyMap from './MyMap';
 
 const Location = () => {
   useEffect(() => {
