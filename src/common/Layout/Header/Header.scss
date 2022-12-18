@@ -5,6 +5,7 @@
   align-items: center;
   min-height: rem(96);
   padding-inline: rem(23);
+  // margin-bottom: rem(59);
 
   &__hamburger {
     width: rem(25);
@@ -52,6 +53,7 @@
   .header {
     justify-content: space-between;
     padding-inline: rem(39);
+    min-height: rem(155);
 
     &__hamburger {
       display: none;

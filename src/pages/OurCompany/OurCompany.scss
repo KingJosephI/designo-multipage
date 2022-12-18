@@ -1,6 +1,6 @@
 @use '../../styles/' as *;
 
-main {
+.our-company__container {
   display: flex;
   flex-direction: column;
 
@@ -98,7 +98,6 @@ main {
   &__content {
     grid-column: 2/3;
   }
-  // margin-bottom: rem(120);
 }
 
 .world-class,
@@ -114,9 +113,7 @@ main {
   }
 
   &__content {
-    // background-image: url('../../assets/shared/desktop/bg-pattern-leaf.svg');
     background-image: url('../../assets/shared/desktop/bg-pattern-three-circles.svg');
-
     background-position: top right;
     background-repeat: no-repeat;
     background-size: contain;
