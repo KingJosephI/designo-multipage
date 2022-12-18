@@ -47,6 +47,12 @@
     width: rem(196);
     height: rem(24);
   }
+
+  .underline {
+    text-decoration: underline;
+    color: $peach;
+    font-weight: 500;
+  }
 }
 
 @media (width>=rem(700)) {

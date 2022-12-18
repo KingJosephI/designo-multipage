@@ -3,9 +3,18 @@ import logo from '../../../assets/shared/desktop/logo-dark.png';
 import './Header.scss';
 
 const Header = () => {
+  let activeStyle = {
+    textDecoration: 'underline',
+  };
+
+  let activeClassName = 'underline';
+
   return (
     <header className="header">
-      <NavLink to="/">
+      <NavLink
+        className={({ isActive }) => (isActive ? `underline` : 'header__link')}
+        to="/"
+      >
         <img
           className="header__logo"
           src={logo}
@@ -16,17 +25,32 @@ const Header = () => {
         <button className="header__hamburger"></button>
         <ul className="header__menu">
           <li>
-            <NavLink className="header__link" to="/our-company">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? `underline header__link` : 'header__link'
+              }
+              to="/our-company"
+            >
               Our company
             </NavLink>
           </li>
           <li>
-            <NavLink className="header__link" to="/location">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? `underline header__link` : 'header__link'
+              }
+              to="/location"
+            >
               Location
             </NavLink>
           </li>
           <li>
-            <NavLink className="header__link" to="/contact">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? `underline header__link` : 'header__link'
+              }
+              to="/contact"
+            >
               Contact
             </NavLink>
           </li>
