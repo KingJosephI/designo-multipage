@@ -1,9 +1,13 @@
+import { useEffect } from 'react';
 import { Layout, LetsTalkSection } from '../../common';
-
-import './LocationPage.scss';
 import MyMap from './MyMap';
+import './LocationPage.scss';
 
 const Location = () => {
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
   return (
     <Layout>
       <main className="location-main">
