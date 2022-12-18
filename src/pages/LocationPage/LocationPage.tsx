@@ -14,21 +14,6 @@ const Location = () => {
         <section className="country-location">
           <div className="country-location__map">
             <MyMap />
-            {/* <MapContainer
-              center={[4.0383, 21.7587]}
-              zoom={13}
-              scrollWheelZoom={false}
-            >
-              <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              />
-              <Marker position={[4.0383, 21.7587]}>
-                <Popup>
-                  A pretty CSS3 popup. <br /> Easily customizable.
-                </Popup>
-              </Marker>
-            </MapContainer> */}
           </div>
           <div className="country-location__content">
             <h2 className="country-location__title">Canada</h2>
