@@ -7,9 +7,9 @@ function MyMap() {
     'pk.eyJ1IjoiamthYmVtYmEyMDIzIiwiYSI6ImNsYnMxbXJzaDBtMnQzb3FkMGN1N21zMHgifQ.z1h3DFIQvWMqxd4YN_XiKQ';
   const mapContainer = useRef(null);
   const map = useRef(null);
-  const [lng] = useState(-70.9);
-  const [lat] = useState(42.35);
-  const [zoom] = useState(9);
+  const [lng, setLng] = useState(-70.9);
+  const [lat, setLat] = useState(42.35);
+  const [zoom, setZoom] = useState(9);
 
   useEffect(() => {
     if (map.current) return; // initialize map only once
